@@ -1,1 +1,1 @@
-# BlackJack
+BlackJack game for BBC Technical Assesment
