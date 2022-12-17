@@ -4,12 +4,9 @@
     let suits = ["H", "D", "C", "S"];
     
 
-
-for(let suitCounter = 0; suitCounter < 4; suitCounter++) { // using a for loop to cycle thorugh suits 0 through 3
-    console.log(suits[suitCounter]);                      //this function returns all suit types H,D,C,S
-};
-
-for(let valueCounter = 0; valueCounter < 13; valueCounter++) { // using a for loop to cycle through values "A"-"K"
-    console.log(values[valueCounter])                          // this function returns all values 
-};
+for(let suitCounter = 0; suitCounter <4; suitCounter++) {
+    for (let valueCounter = 0; valueCounter < 13; valueCounter++){
+        console.log(values[valueCounter] + suits[suitCounter]); //added nexted function to combine 2 functions and return a 52 card deck
+    } 
+}
 
