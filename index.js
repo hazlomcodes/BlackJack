@@ -1,4 +1,4 @@
-
+function createDeck() { 
 
     let values = ["A","2","3","4","5","6","7","8","9","10","J","Q","K"];
     let suits = ["H", "D", "C", "S"];
@@ -10,6 +10,23 @@ for(let suitCounter = 0; suitCounter <4; suitCounter++) {
         deck.push(values[valueCounter] + suits[suitCounter]); //added nexted function to combine 2 functions and return a 52 card deck
     } 
 
+ } 
+  return deck;
+
+}
+function shuffleDeck(deck) {
+    for(let i = 0; i <52; i++) {
+    let tempCard = deck[i];
+    let randomIndex = Math.floor(Math.random() * 52); 
+    deck[i] = deck[randomIndex]
+    deck[randomIndex] = tempCard;
+  }
 }
 
-console.log(deck);
+let testDeck = createDeck();
+shuffleDeck(testDeck);
+console.log(testDeck);
+
+
+
+
