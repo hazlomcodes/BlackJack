@@ -1,22 +1,38 @@
-let cards = [] //array - ordered list
-let sum = 0
+let player = {
+    name: "Hacker T Dog",
+    chips: 1922
+}
+
+let dealer = {
+    name: "Phil",
+    chips:1990
+}
+
+let playerCards = [] //array - ordered list
+let playerSum = 0
+let dealerCards = []
+let dealerSum = 0
+
 let hasBlackJack = false
 let isAlive = false
+
 let message = ""
 let messageEl = document.getElementById ("message-el")
 let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
+let playerEl = document.getElementById("player-el")
+let dealerEl = document.getElementById("dealer-el")
 
-console.log(cards)
-
+playerEl.textContent = player.name + ": £" + player.chips
+dealerEl.textContent = dealer.name + ": £" + dealer.chips
 function getRandomCard() {
-    let randomNumer = Math.floor(Math.random()*13) + 1
-    if (randomNumer > 10) {
+    let randomNumber = Math.floor(Math.random()*13) + 1
+    if (randomNumber >= 11) {
         return 10
-    } else if (randomNumer === 1) {
+    } else if (randomNumber === 1) {
         return 11
     } else {
-        return randomNumer
+        return randomNumber
     }
 }
 
@@ -37,7 +53,7 @@ function renderGame() {
     }
      sumEl.textContent = "Sum: " + sum //reconstructs original text as well as sum
     if (sum <=20) {
-    message = "Do you want to hit?"
+    message = "Do you want to twist?"
     } else if (sum === 21)  {
     message = "BlackJack"
     hasBlackJack = true
@@ -60,6 +76,10 @@ function newCard() {
 
     renderGame()
 }
+}
+
+function stick(){
+
 }
 
 
