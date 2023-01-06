@@ -1,0 +1,26 @@
+{
+  "name": "blackjack",
+  "description": "BlackJack game for BBC Technical Assesment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hazlomcodes/BlackJack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hazlomcodes/BlackJack/issues"
+  },
+  "homepage": "https://github.com/hazlomcodes/BlackJack#readme"
+}
