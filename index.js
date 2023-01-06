@@ -1,14 +1,31 @@
-let firstCard = 10
-let secondCard = 11
+let firstCard = getRandomCard()
+let secondCard = getRandomCard()
+let cards = [firstCard, secondCard] //array - ordered list
 let sum = firstCard + secondCard 
 let hasBlackJack = false
 let isAlive = true 
 let message = ""
-
 let messageEl = document.getElementById ("message-el")
-console.log(messageEl)
+let sumEl = document.getElementById("sum-el")
+let cardsEl = document.getElementById("cards-el")
+
+function getRandomCard() {
+    return Math.floor(Math.random()*13)
+}
 
 function startGame() {
+    renderGame()
+}
+
+function renderGame() {
+    cardsEl.textContent = "Cards: "
+    for (let i = 0; i < cards.length; i++) {
+        cardsEl.textContent += cards[i] + " "
+    }
+    
+
+    
+    sumEl.textContent = "Sum: " + sum //reconstructs original text as well as sum
     if (sum <=20) {
     message = "Do you want to hit?"
     } else if (sum === 21)  {
@@ -21,6 +38,15 @@ function startGame() {
 
 messageEl.textContent = message
 
+}
+
+function newCard() {
+    
+    let card = getRandomCard()
+     sum += card
+     cards.push(card)
+
+    renderGame()
 }
 
 

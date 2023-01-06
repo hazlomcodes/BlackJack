@@ -28,5 +28,7 @@ button {
     font-weight: bold;
     border:none;
     border-radius: 10px;
+    margin-bottom: 10x;
+    margin-top: 10px;
 }
 
