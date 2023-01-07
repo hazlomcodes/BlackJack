@@ -55,6 +55,24 @@ div.inactive {
     display: none;
 }
 
+#start-game-btn {
+    width: 300px;
+    font-size: 24px;
+}
+
+#new-game-btn {
+    display:none;
+    margin: auto;
+    background-color: darkred;
+}
+
+#new-card-btn {
+    display:none;
+    width: 250px;
+    font-size: 20px;
+    margin: 5px  auto;
+}
+
 
 
 
