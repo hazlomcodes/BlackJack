@@ -57,6 +57,7 @@ function getRandomCard() {
     }
 }
 
+
 function startGame() {
     isAlive = true
     let firstCard = getRandomCard()
@@ -178,3 +179,15 @@ function newGame() {
 // console.log(dealerCards);
 
 // console.log(deck);
+
+function getRandomCard(deck) {
+    const randomIndex = Math.floor(Math.random() * deck.length);
+
+    // get random item
+    const item = deck[randomIndex];
+
+    return item;
+}
+
+
+const deck = ["A", 2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q" ,"K"]
