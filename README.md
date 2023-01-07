@@ -10,6 +10,6 @@ This project is a Blackjack game that can be run in browser. It was developed us
 * For Loops
 * If/Else Statements
 
-## Example Video of Project
+## Example Code
 
 

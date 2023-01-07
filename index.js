@@ -3,11 +3,6 @@ let player = {
     chips: 1922
 }
 
-let dealer = {
-    name: "Phil",
-    chips:1990
-}
-
 let playerCards = [] //array - ordered list
 let playerSum = 0
 let dealerCards = []
@@ -57,8 +52,8 @@ function getRandomCard() {
     }
 }
 
-
 function startGame() {
+    
     isAlive = true
     let firstCard = getRandomCard()
     let secondCard = getRandomCard()
@@ -77,14 +72,14 @@ function startGame() {
 }
 
 function renderGame() {
+    
     cardsEl.textContent = "Cards: "
+    
     for (let i = 0; i < cards.length; i++) {
         cardsEl.textContent += cards[i] + " "
     }
-     
-    sumEl.textContent = `Sum = ${sum}`
+     sumEl.textContent = `Sum = ${sum}`
     //reconstructs original text as well as sum
-    
     if (sum <=20) {
     message = "Do you want to twist?"
     } else if (sum === 21)  {
@@ -94,11 +89,8 @@ function renderGame() {
     message = "Bust"
     isAlive = false
     }
-
-messageEl.textContent = message
-
+    messageEl.textContent = message
 }
-
 
 function renderButtons() {
     startGameBtn.style.display="none"
@@ -179,15 +171,3 @@ function newGame() {
 // console.log(dealerCards);
 
 // console.log(deck);
-
-function getRandomCard(deck) {
-    const randomIndex = Math.floor(Math.random() * deck.length);
-
-    // get random item
-    const item = deck[randomIndex];
-
-    return item;
-}
-
-
-const deck = ["A", 2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q" ,"K"]

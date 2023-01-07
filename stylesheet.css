@@ -10,27 +10,34 @@ body {
 }
 
 h1 {
-    color:yellow
+    color:#f9c11c;
+    font-size: 100px;
 }
 
 #message-el {
     font-style: italic;
     text-align: center;
+    font-size: 40px;
 }
+
+#cards-el {font-size: 25px;}
+
+#sum-el{font-size: 20px;}
 
 button {
     color:black;
     width: 200px;
-    background:yellow;
+    height: 60px;
+    background:#f9c11c;
     padding-top: 10px;
     padding-bottom: 10px;
     font-weight: bold;
     border:none;
-    border-radius: 10px;
+    border-radius: 50px;
 }
 
 button:active {
-  background-color: #3e8e41;
+  background-color:#0d8549;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
@@ -42,7 +49,7 @@ div.card{
     border: 1px solid black;
     margin: 10px auto;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .card-value{
@@ -63,7 +70,7 @@ div.inactive {
 #new-game-btn {
     display:none;
     margin: auto;
-    background-color: darkred;
+    
 }
 
 #new-card-btn {
