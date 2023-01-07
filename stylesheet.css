@@ -9,14 +9,13 @@ body {
    
 }
 
-
-
 h1 {
     color:yellow
 }
 
 #message-el {
     font-style: italic;
+    text-align: center;
 }
 
 button {
@@ -34,6 +33,26 @@ button:active {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+
+div.card{
+    display: inline-block;
+    height: 100px;
+    width:65px;
+    border: 1px solid black;
+    margin: 10px auto;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.card-value{
+    color: black;
+    padding-top: 30px;
+    font-size: 30px;
+}
+
+div.inactive {
+    display: none;
 }
 
 
